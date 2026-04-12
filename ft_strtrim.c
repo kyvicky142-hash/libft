@@ -1,0 +1,1 @@
+im going to finish strtrim.c 
