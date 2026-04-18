@@ -12,12 +12,12 @@
 
 #include "libft.h"
 
-void	*ft_memcpy_fromback(void *dst, const void *src, size_t n)
+static void	*ft_memcpy_backwards(void *dst, const void *src, size_t n)
 {
 	unsigned	char	*dest = (unsigned char *)dst;
 	unsigned	char	*source = (unsigned char *)src;
 	int	i = n - 1;
-	while (i <= 0)
+	while (i >= 0)
 	{
 		dest[i] = source[i];
 		i--;
@@ -34,13 +34,13 @@ void	*memmove(void *dst, const void *src, size_t n)
 	dest = (unsigned char *)dst;
 	source = (const unsigned char *)src;
 	if (dest > source)
-		ft_memcpy_fromback(dest, source, n);
+		ft_memcpy_backwards(dest, source, n);
 	else
 		ft_memcpy(dest, source, n);
 	return (dst);
 }
 
-//ft_memcpy_fromback to write the memory 
+//ft_memcpy_backwards to write the memory 
 //starting from back to fix the overlaping issue
 //copy len bytes from string source and dest 
 //and even if they overlap the copy 
