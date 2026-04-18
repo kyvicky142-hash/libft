@@ -3,32 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: vshanmug <vshanmug@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/14 11:29:16 by marvin            #+#    #+#             */
-/*   Updated: 2026/04/14 11:29:16 by marvin           ###   ########.fr       */
+/*   Created: 2026/04/18 14:41:10 by vshanmug          #+#    #+#             */
+/*   Updated: 2026/04/18 14:41:10 by vshanmug         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// char	*ft_strdup(const char *s1)
-// {
-// 	int		len;
-// 	char	*dup;
-// 	int		i;
-
-// 	dup = malloc(sizeof(char) * (ft_strlen(s1) + 1));
-// 	len = ft_strlen(s1);
-// 	if (!dup)
-// 		return (NULL);
-// 	i = 0;
-// 	while (i < len)
-// 	{
-// 		dup[i] = s1[i];
-// 		i++;
-// 	}
-// 	dup[i] = '\0';
-// 	return (dup);
-// }
+#include "libft.h"
 
 char	*ft_strdup(const char *s1)
 {
@@ -49,3 +31,30 @@ char	*ft_strdup(const char *s1)
 	dup[i] = '\0';
 	return (dup);
 }
+
+//string duplicate copies s1 into newly allocated memmory
+//for an exmple: s1 = "burger" s2 is the newly allocated memmory
+//and i want to duplicate s1 i can now use s2 
+//to duplicate into which changes the s2 value to burger as well
+
+// char	*ft_strdup(const char *s1)
+// {
+// 	int		len;
+// 	char	*dup;
+// 	int		i;
+
+//ALLOCATES MEMMORY
+// 	dup = malloc(sizeof(char) * (ft_strlen(s1) + 1));
+// 	len = ft_strlen(s1);
+// 	if (!dup)
+// 		return (NULL);
+// 	i = 0;
+// 	while (i < len)
+// 	{
+//COPIES TO S1
+// 		dup[i] = s1[i];
+// 		i++;
+// 	}
+// 	dup[i] = '\0';
+// 	return (dup);
+// }
