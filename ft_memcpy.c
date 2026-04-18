@@ -16,7 +16,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	unsigned char		*dest;
 	const unsigned char	*source;
-	int					i;
+	size_t					i;
 
 	dest = (unsigned char *)dst;
 	source = (const unsigned char *)src;
@@ -28,7 +28,6 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-
 //it will copy n bytes fromm the source to destination
 //and if it overlaps the behavoir would be undifined 
 //and use memmove instead

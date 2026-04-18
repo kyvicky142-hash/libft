@@ -31,7 +31,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		i++;
 		j++;
 	}
-	int	j = 0;
+	j = 0;
 	while (s2[j])
 	{
 		new_str[i] = s2[j];

@@ -12,16 +12,15 @@
 
 #include "libft.h"
 
-int	ft_strlen(char const *s)
+size_t	ft_strlen(char const *s)
 {
-	int	len;
+	size_t	len;
 
 	len = 0;
 	while (s[len] != '\0')
 		len++;
 	return (len);
 }
-
 // TO FIND THE LENGHT OF THE SOURCE
 
 // int	ft_strlen(char const *s)

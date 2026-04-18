@@ -12,21 +12,7 @@
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
-{
-	unsigned char	*str;
-	int				i;
-
-	str = (unsigned char *)s;
-	i = 0;
-	while (i < n)
-	{
-		str[i] = 0;
-		i++;
-	}
-}
-
-void	ft_fill_itoa(char *buff, int n, int *b_idx)
+static void	ft_fill_itoa(char *buff, int n, int *b_idx)
 {
 	if (n < 0)
 	{
@@ -46,32 +32,6 @@ void	ft_fill_itoa(char *buff, int n, int *b_idx)
 	*b_idx = *b_idx + 1;
 }
 
-int	ft_strlen(char const *s)
-{
-	int	len;
-
-	len = 0;
-	while (s[len] != '\0')
-		len++;
-	return (len);
-}
-
-char	*ft_strdup(const char *s)
-{
-	int		len;
-	char	*dup;
-	int		i;
-
-	dup = malloc(sizeof(char) * (len + 1));
-	len = ft_strlen(s);
-	while (s[i] != '\0')
-	{
-		dup[i] = s[i];
-		i++;
-	}
-	dup[i] = '\0';
-	return (dup);
-}
 
 char	*ft_itoa(int n)
 {
@@ -87,14 +47,14 @@ char	*ft_itoa(int n)
 	return (ft_strdup(buf));
 }
 
-int main()
-{
-	printf("%s\n", ft_itoa(42069));
-	return (0);
-}
+// int main()
+// {
+// 	printf("%s\n", ft_itoa(42069));
+// 	return (0);
+// }
 
 //itoa is used to convert an integer to a string 
 //buf[12] is the buffer made to take 11 longest characters before memory allocation occurs 
 //ft_strdup used to duplicate the buffer into newly allocated memory and return it
 //ft_fill_itoa is a recurisve function that fills the buffer with the characters of the integer n and updates the index of the buffer using b_idx pointer
-//ft_bzero just zeroes out the buffer before filling it 
+//ft_bzero just zeroes out the buffer before filling it

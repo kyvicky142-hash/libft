@@ -26,7 +26,7 @@ char	*ft_strrchr(const char *s, int c)
 		i++;
 	}
 	if (last_occurrence != -1)
-		return (&s[last_occurrence]);
+		return ((char *)&s[last_occurrence]);
 	return (NULL);
 }
 

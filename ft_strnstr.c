@@ -14,17 +14,15 @@
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	int	needle_len;
-	int	haystack_len;
-	int	i;
+	size_t	needle_len;
+	size_t	i;
 
 	needle_len = ft_strlen(needle);
-	haystack_len = ft_strlen(haystack);
 	i = 0;
-	while (haystack[i] != '\0' && (haystack_len - i) > needle_len)
+	while (haystack[i] != '\0' && (len - i) > needle_len)
 	{
-		if(ft_memcmp((void *)needle, needle_len) == 0)
-			return (&haystack[i]);
+		if(ft_memcmp((void *)(&haystack[i]), (void *)needle, needle_len) == 0)
+			return ((char *)&haystack[i]);
 		i++;
 	}
 	return (NULL);

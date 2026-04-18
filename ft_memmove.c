@@ -25,11 +25,10 @@ static void	*ft_memcpy_backwards(void *dst, const void *src, size_t n)
 	return dst;
 }
 
-void	*memmove(void *dst, const void *src, size_t n)
+void	*ft_memmove(void *dst, const void *src, size_t n)
 {
 	unsigned char		*dest;
 	const unsigned char	*source;
-	int					i;
 
 	dest = (unsigned char *)dst;
 	source = (const unsigned char *)src;
