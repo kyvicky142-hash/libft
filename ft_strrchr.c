@@ -14,20 +14,22 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int	i;
+	int					i;
 	int	last_occurrence;
 
 	i = 0;
 	last_occurrence = -1;
-	while (s[i])
+	while (s[i] != '\0')
 	{
-		if (s[i] == c)
+		if ((unsigned char)s[i] == (unsigned char)c)
 			last_occurrence = i;
 		i++;
 	}
-	if (last_occurrence != -1)
-		return ((char *)&s[last_occurrence]);
-	return (NULL);
+	if (s[i] == (unsigned char)c)
+		last_occurrence = i;
+	if (last_occurrence == -1)
+		return (NULL);
+	return ((char *)&s[last_occurrence]);
 }
 
 //excatly same as ft_strchr but it return last occurrence/encounter

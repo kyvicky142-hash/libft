@@ -33,15 +33,17 @@ void	*ft_strtrim(char const *s1, char const *set)
 
 	if (!s1)
 		return (NULL);
+	if (!set)
+		return ((void *)s1);
 	start = 0;
 	end = ft_strlen(s1) - 1;
-	 while (ft_isinset(s1[start], set) && s1[start] != '\0')
+	 while (s1[start] != '\0' && ft_isinset(s1[start], set))
 		start++;
-	while (ft_isinset (s1[end], set) && end >= 0)
+	while (end >= 0 && ft_isinset(s1[end], set))
 		end--;
 	if (end < start)
 		return (ft_strdup(""));
-	return (ft_substr((char *)s1, start, end - start));
+	return (ft_substr((char *)s1, start, end - start + 1));
 }
 
 // Prototype:

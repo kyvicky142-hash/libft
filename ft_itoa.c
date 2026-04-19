@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static void	ft_fill_itoa(char *buff, int n, int *b_idx)
+ void	ft_fill_itoa(char *buff, int n, int *b_idx)
 {
 	if (n < 0)
 	{

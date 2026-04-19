@@ -19,10 +19,12 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 
 	needle_len = ft_strlen(needle);
 	i = 0;
-	while (haystack[i] != '\0' && (len - i) > needle_len)
+	if(needle_len == 0)
+		return ((char *)haystack);
+	while (haystack[i] != '\0' && i + needle_len <= len)
 	{
-		if(ft_memcmp((void *)(&haystack[i]), (void *)needle, needle_len) == 0)
-			return ((char *)&haystack[i]);
+		if(ft_memcmp((void *)(haystack + i), (void *)needle, needle_len) == 0)
+			return ((char *)(haystack + i));
 		i++;
 	}
 	return (NULL);
