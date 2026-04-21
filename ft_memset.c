@@ -34,7 +34,6 @@ void	*ft_memset(void *b, int c, size_t len)
 // for an exmaple: b: structure			ft_memset("%s\n", 'k', 5)
 //output:kkkkkture
 
-
 // void	*ft_memset(void *b, int c, size_t len)
 // {
 // 	unsigned char	*ptr;

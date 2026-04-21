@@ -28,6 +28,7 @@ OBJS = ${SRC:.c=.o}
 
 CC = gcc
 RM = rm -rf
+WRM = del /f /q
 CFLAGS = -Wall -Wextra -Werror
 INCLUDE = -I .
 
@@ -45,6 +46,14 @@ clean:
 fclean: clean
 		${RM} ${NAME}
 
+wclean:
+		${WRM} ${OBJS}
+
+wfclean: clean
+		${WRM} ${NAME}
+
 re: fclean all
+
+wre: wfclean all
 
 .PHONY: all clean fclean re

@@ -14,15 +14,19 @@
 
 static void	*ft_memcpy_backwards(void *dst, const void *src, size_t n)
 {
-	unsigned	char	*dest = (unsigned char *)dst;
-	unsigned	char	*source = (unsigned char *)src;
-	int	i = n - 1;
+	unsigned char	*dest;
+	unsigned char	*source;
+	int				i;
+
+	dest = (unsigned char *)dst;
+	source = (unsigned char *)src;
+	i = n - 1;
 	while (i >= 0)
 	{
 		dest[i] = source[i];
 		i--;
 	}
-	return dst;
+	return (dst);
 }
 
 void	*ft_memmove(void *dst, const void *src, size_t n)

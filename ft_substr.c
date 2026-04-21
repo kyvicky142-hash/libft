@@ -15,11 +15,11 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t		rem_len;
-	char	*new_str;
+	char		*new_str;
 	size_t		i;
 
 	rem_len = ft_strlen(s) - start;
-	if(rem_len < len)
+	if (rem_len < len)
 		len = rem_len;
 	new_str = malloc(sizeof(char) * (len + 1));
 	if (new_str == NULL)

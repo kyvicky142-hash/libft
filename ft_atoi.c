@@ -12,14 +12,14 @@
 
 #include "libft.h"
 
-int	ft_iswhite(int c)
+static	int	ft_iswhite(int c)
 {
 	if (c == ' ')
 		return (1);
 	if (c == '\t')
 		return (1);
 	if (c == '\n')
-		return (1);	
+		return (1);
 	if (c == '\v')
 		return (1);
 	if (c == '\f')

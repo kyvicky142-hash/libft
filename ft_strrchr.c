@@ -15,7 +15,7 @@
 char	*ft_strrchr(const char *s, int c)
 {
 	int					i;
-	int	last_occurrence;
+	int					last_occurrence;
 
 	i = 0;
 	last_occurrence = -1;

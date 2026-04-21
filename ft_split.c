@@ -27,7 +27,7 @@ static int	get_num_words(char const *s, char c)
 		}
 		if (s[i] == '\0')
 			break ;
-		num_words+= 1;
+		num_words += 1;
 		while (s[i] != c && s[i] != '\0')
 			i++;
 	}
@@ -55,18 +55,18 @@ static int	ft_word_len(char const *curr_spot, char c)
 
 static char	*get_next_word(char const *s, int *s_idx, char c)
 {
-	int word_len;
-	char *word;
-	int i;
+	int		word_len;
+	char	*word;
+	int		i;
 
 	word_len = ft_word_len(&s[*s_idx], c);
 	word = malloc(sizeof(char) * (word_len + 1));
 	i = 0;
-	if(!word)
+	if (!word)
 		return (NULL);
-	while(s[*s_idx] == c)
+	while (s[*s_idx] == c)
 		*s_idx = *s_idx + 1;
-	while(s[*s_idx] != '\0' && i < word_len)
+	while (s[*s_idx] != '\0' && i < word_len)
 	{
 		word[i] = s[*s_idx];
 		*s_idx = *s_idx + 1;
