@@ -18,3 +18,7 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
+
+//checks if the character is a printable character such 
+//non-printing, special numeric values (typically ASCII 0–31 and 127)
+//used in computing to instruct devices or software to perform actions

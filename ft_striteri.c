@@ -25,3 +25,9 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
+
+//this will alter the string s 
+//ft_striteri Applies the function ’f’ to each character of the
+//string passed as argument, passing its index as
+//the first argument. Each character is passed by
+//address to ’f’ so it can be modified if necessary.

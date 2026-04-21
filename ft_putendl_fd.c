@@ -17,6 +17,8 @@ void	ft_putendl_fd(char *s, int fd)
 	ft_putstr_fd(s, fd);
 	ft_putchar_fd('\n', fd);
 }
+
+//ft_putendl_fd writes s and the new line to fd
 //int write
 //(int fileDescriptor, void *buffer, size_t bytesToWrite)
 //fileDescriptor: It is an integer file descriptor for the opened file,
@@ -24,4 +26,5 @@ void	ft_putendl_fd(char *s, int fd)
 //buffer: This pointer points to a buffer containing 
 //the data we want to write into the file.
 //bytesToWrite: Here, we provide an unsigned integer variable that 
-//specifies the maximum number of bytes we want to write from the buffer to the file.
+//specifies the maximum number of bytes
+// we want to write from the buffer to the file.

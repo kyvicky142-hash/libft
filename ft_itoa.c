@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void	ft_fill_itoa(char *buff, int n, int *b_idx)
+static void	ft_fill_itoa(char *buff, int n, int *b_idx)
 {
 	if (n < 0)
 	{
@@ -45,13 +45,11 @@ char	*ft_itoa(int n)
 	buf[i] = '\0';
 	return (ft_strdup(buf));
 }
-
-// int main()
-// {
-// 	printf("%s\n", ft_itoa(42069));
-// 	return (0);
-// }
-
+//Step 1 create a buffer 
+//the buffer stack memory so we should not return it 
+//because the string length of the integer min is 11 plus null termination
+//Step 2 recursively fill the buffer 
+//Step 3 duplicate the buffer 
 //itoa is used to convert an integer to a string 
 //buf[12] is the buffer made to take 11 longest characters
 // before memory allocation occurs 

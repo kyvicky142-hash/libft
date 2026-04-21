@@ -101,3 +101,12 @@ char	**ft_split(char const *s, char c)
 	}
 	return (sentence);
 }
+
+//Step 1 get the number of words in the string 
+//and allocate memory for the sentence
+//Step 2 get the length of the word and allocate memory for the word
+//Step 3 get the next word and fill the sentence with the words
+//ft_split splits the string s using the character c 
+//as a delimiter and returns an array of strings
+//the array must end with a NULL pointer
+//delimiter is the character used to split the string into words

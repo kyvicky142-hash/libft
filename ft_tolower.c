@@ -16,3 +16,5 @@ int	ft_tolower(int c)
 		return (c + 32);
 	return (c);
 }
+
+//checks if character is an uppercase letter and change it to a lowercase.

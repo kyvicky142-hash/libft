@@ -18,3 +18,5 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
+
+//checks if the character is a digit (0-9) in the ascii table 

@@ -34,6 +34,7 @@ void	ft_putnbr_fd(int n, int fd)
 	ft_putchar_fd(n + '0', fd);
 }
 
+//ft_putnbr_fd writes number to the file descriptor fd
 // 42069
 // 4206
 // 420

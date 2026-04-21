@@ -18,5 +18,8 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
-//boolean data type in computing that holds only one of two possible values: 
+//boolean data type in computing that holds only one of two possible values:
+//an expression that evaluates to a logical value:
+// either true (any non-zero value) or false (zero)
 //true or false (or 1 and 0), representing binary logic
+// checks if the character is an alphabet (either uppercase or lowercase)

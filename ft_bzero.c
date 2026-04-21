@@ -18,7 +18,3 @@ void	ft_bzero(void *s, size_t n)
 }
 
 //converts length n bytes to zero starting at s 
-// void	ft_bzero(void *s, size_t n)
-// {
-// 	ft_memset(s, 0, n);
-// }

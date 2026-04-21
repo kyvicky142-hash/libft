@@ -29,3 +29,10 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
+
+//ft_strnstr locates the first occurrence of 
+//string needle in the string haystack,
+// where not more than len characters are searched.
+//Characters that appear after a '\0' character are not searched.
+//If needle is an empty string, haystack is returned; 
+//if needle occurs nowhere in haystack,

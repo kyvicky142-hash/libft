@@ -58,22 +58,6 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 //						m e m c m e
 //				m e m e m c
 //					m e m c p y
-
-// void	*memmove(void *dst, const void *src, size_t n)
-// {
-// 	unsigned char		*dest;
-// 	const unsigned char	*source;
-// 	int					i;
-
-// 	dest = (unsigned char *)dst;
-// 	source = (const unsigned char *)src;
-// 	if (dest > source)
-// 		ft_memcpy_fromback(dest, source, n);
-// 	else
-// 		ft_memcpy(dest, source, n);
-// 	return (dst);
-// }
-
 //destructive : b b b b b b
 //				  b b b b b b
 

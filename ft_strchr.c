@@ -17,13 +17,13 @@ char	*ft_strchr(const char *s, int c)
 	size_t	i;
 
 	i = 0;
-	while (s[i])
+	while (s[i] != '\0')
 	{
-		if (s[i] == c)
+		if ((unsigned char)s[i] == (unsigned char)c)
 			return ((char *)&s[i]);
 		i++;
 	}
-	if (s[i] == c)
+	if ((unsigned char)s[i] == (unsigned char)c)
 		return ((char *)&s[i]);
 	return (NULL);
 }
@@ -39,19 +39,3 @@ char	*ft_strchr(const char *s, int c)
 // when printing out it will look like 'ate' since it stops at a
 //printf("%s\n", ft_strchr("duplicate", 'a'))
 //output : "ate"
-
-// char	*ft_strchr(const char *s, int c)
-// {
-// 	int	i;
-
-// 	i = 0;
-// 	while (s[i])
-// 	{
-// 		if (s[i] == c)
-// 			return (&s[i]);
-// 		i++;
-// 	}
-// 	if (s[i] == c) //if ('\0' == c) fucntiions the same
-// 		return (&s[i]);
-// 	return (NULL);
-// }

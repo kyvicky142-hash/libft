@@ -17,6 +17,7 @@ void	ft_putchar_fd(char c, int fd)
 	write(fd, &c, 1);
 }
 
+//writes a character to the file descriptor fd
 //int write
 //(int fileDescriptor, void *buffer, size_t bytesToWrite)
 //fileDescriptor: It is an integer file descriptor for the opened file,

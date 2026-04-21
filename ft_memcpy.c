@@ -32,20 +32,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 //it will copy n bytes fromm the source to destination
 //and if it overlaps the behavoir would be undifined 
 //and use memmove instead
-
-// void	*ft_memcpy(void *dst, const void *src, size_t n)
-// {
-// 	unsigned char		*dest;
-// 	const unsigned char	*source;
-// 	int					i;
-
-// 	dest = (unsigned char *)dst;
-// 	source = (const unsigned char *)src;
-// 	i = 0;
-// 	while (i < n)
-// 	{
-// 		dest[i] = source[i];
-// 		i++;
-// 	}
-// 	return (dst);
-// }
+//restricted keyowrd n the reason we dont use it is 
+//because it is deprecated
+//ft that used malloc: ft_calloc, ft_strdup, ft_itoa, ft_substr
+//                     ft_strjoin, ft_strmapi, ft_split, ft_strtrim

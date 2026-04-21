@@ -37,3 +37,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[dst_len + i] = '\0';
 	return (dst_len + src_len);
 }
+
+//ft_strlcat copies up to dstsize - 1 characters from the string src to dst,
+//null-terminating the result if dstsize is not 0 and 
+//the initial length of dst is less than dstsize

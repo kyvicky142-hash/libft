@@ -18,3 +18,5 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
+
+//checks if the characeter is an alphabet or a digit

@@ -31,21 +31,6 @@ void	*ft_memchr(const void *s, int c, size_t n)
 //memchr it locates the first occurrence of c in string s
 // return a pointer to the byte located 
 //or NULL if no byte exists within n bytes
-
-// void	*ft_memchr(const void *s, int c, size_t n)
-// {
-// 	const unsigned char	*str = (const unsigned char *)s;
-// 	int					i;
-
-// 	i = 0;
-// 	while (i < n)
-// 	{
-// 		if (str[i] == (unsigned char)c)
-// 			return ((void *)&str[i]);
-// 		i++;
-// 	}
-// 	return (NULL);
-// }
 //Strings: You typically iterate until a null terminator ('\0') is reached.
 //Memory Blocks: You must provide an explicit size 
 //(number of bytes or elements) to the loop.

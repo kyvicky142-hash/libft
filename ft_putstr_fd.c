@@ -19,6 +19,8 @@ void	ft_putstr_fd(char *s, int fd)
 	len = ft_strlen(s);
 	write(fd, s, len);
 }
+
+//ft_putstr_fd writes a string to the file descriptor fd
 //int write
 //(int fileDescriptor, void *buffer, size_t bytesToWrite)
 //fileDescriptor: It is an integer file descriptor for the opened file, 

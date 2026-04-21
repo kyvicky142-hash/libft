@@ -33,3 +33,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	new_str[i] = '\0';
 	return (new_str);
 }
+
+//ft_substr allocates (with malloc(3)) and 
+//returns a substring from the string ’s’.

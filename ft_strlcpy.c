@@ -26,3 +26,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 		dst[i] = '\0';
 	return (ft_strlen(src));
 }
+
+//ft_strlcpy copies up to dstsize - 1 characters from the string src to dst,
+//null-terminating the result if dstsize is not 0
+//does not allocate memory 

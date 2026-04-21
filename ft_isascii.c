@@ -18,3 +18,6 @@ int	ft_isascii(int c)
 		return (1);
 	return (0);
 }
+
+//checks if the character is an ascii characater (0-127 in the ASCII table)
+//checks if its a one byte character 8bits holds a 128 bytes character set

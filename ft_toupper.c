@@ -16,3 +16,5 @@ int	ft_toupper(int c)
 		return (c - 32);
 	return (c);
 }
+
+//checks if the character is a lowercase letter and change it to an uppercase.

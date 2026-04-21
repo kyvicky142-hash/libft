@@ -22,3 +22,7 @@ void	*ft_calloc(size_t count, size_t size)
 	ft_bzero(array, size * count);
 	return ((void *)array);
 }
+
+// it will allocate unused memory and set it to zero
+// it will allocate memory for an array of count elements
+// of size bytes each and returns a pointer

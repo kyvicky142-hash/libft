@@ -23,13 +23,3 @@ size_t	ft_strlen(char const *s)
 }
 
 // TO FIND THE LENGHT OF THE SOURCE
-
-// int	ft_strlen(char const *s)
-// {
-// 	int	len;
-
-// 	len = 0;
-// 	while (s[len] != '\0')
-// 		len++;
-// 	return (len);
-// }
