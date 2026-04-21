@@ -49,7 +49,7 @@ fclean: clean
 wclean:
 		${WRM} ${OBJS}
 
-wfclean: clean
+wfclean: wclean
 		${WRM} ${NAME}
 
 re: fclean all
