@@ -1,104 +1,48 @@
- Libft
- Description
+This project has been created as part of 42 curriculum by vshanmug.
 
-Libft is a foundational C library project developed as part of the 42 curriculum. The main goal of this project is to recreate a set of standard C library functions, as well as implement additional utility functions that will be reused in future projects.
+Description
+libft is a foundational C library project from the 42 School curriculum. Its goal is to recreate a set of standard C library functions, along with additional utility functions, to build a personal, reusable library.
 
-This project helps strengthen understanding of:
+The project helps develop a deeper understanding of low-level programming concepts such as memory management, string manipulation, and data structures. By implementing these functions from scratch, it strengthens coding discipline, attention to detail, and familiarity with the C language—forming a solid base for more advanced projects.
 
-Memory management
-String manipulation
-Data structures (linked lists)
-Code organization and modular programming in C
+Instructions
 
-By building this library from scratch, the project reinforces low-level programming concepts and encourages writing clean, reusable, and efficient code.
-
- Instructions
- Compilation
-
-To compile the library, navigate to the root directory and run:
+Compilation
+To compile the library, run:
 
 make
 
-This will generate the static library:
+This will generate the static library file libft.a.
 
-libft.a
- Clean Object Files
-make clean / make wclean
- Full Clean (including library)
-make fclean / make wfclean
- Recompile
-make re 
- Usage
+Cleaning object files
 
-To use libft in your project:
+make (clean / wclean)
 
-Include the header file in your code:
-#include "libft.h"
-Compile your program with the library:
-gcc your_file.c -L. -lft -o your_program
- Library Overview
+Full clean (remove object files + library)
 
-The library is divided into several categories:
+make (fclean / wfclean) 
 
- Character Functions
-ft_isalpha, ft_isdigit, ft_isalnum, ft_isascii, ft_isprint
-ft_toupper, ft_tolower
+Recompile everything
 
- Memory Functions
-ft_memset, ft_bzero, ft_memcpy, ft_memmove
-ft_memchr, ft_memcmp, ft_calloc
+make re
 
- String Functions
-ft_strlen, ft_strdup, ft_strcpy, ft_strncpy
-ft_strchr, ft_strrchr, ft_strncmp, ft_strnstr
-ft_strlcpy, ft_strlcat
+it is also executable in window and thats the reason why there is wclean and wfclean as the letter 'w' in the word stands for Window.
 
- String Manipulation
-ft_substr, ft_strjoin, ft_strtrim
-ft_split, ft_itoa
-ft_strmapi, ft_striteri
+Resources
 
- Output Functions
-ft_putchar_fd, ft_putstr_fd
-ft_putendl_fd, ft_putnbr_fd
+References
 
- Example
-#include "libft.h"
-#include <stdio.h>
+The C Programming Language — Classic reference for understanding core C concepts and standard functions.
+GNU C Library — Official documentation for standard C library functions.
+man pages — Used for detailed explanations of function behavior and edge cases (e.g., man strlen, man memcpy).
+42 School — Project guidelines and subject requirements.
+GeeksforGeeks — Supplementary explanations and examples for C concepts.
 
-int main(void)
-{
-    char *str = ft_strdup("Hello, 42!");
-    printf("%s\n", str);
-    free(str);
-    return 0;
-}
- Technical Choices
-Written in pure C (C99 standard)
-No use of standard library implementations (except allowed functions)
-Modular structure for maintainability
-Static library (.a) for reuse across projects
- Resources
- References
-The C Programming Language by Kernighan & Ritchie
-GNU C Library Documentation (glibc)
-Linux man pages (man 3 function_name)
-42 Intra subject documentation
- Use of AI
+Use of AI
+AI tools (such as ChatGPT) were used as a support resource during the project. Specifically:
 
-AI tools (such as ChatGPT) were used in the following ways:
+Clarifying concepts related to C syntax, memory management, and pointer usage
+Explaining the behavior of standard library functions
+Assisting in simplifying documentation and improving README clarity
 
-Clarifying concepts (e.g., pointer arithmetic, memory allocation)
-Debugging assistance and error explanation
-Improving code readability and structure
-Generating examples and test cases
-
-All final implementations were written and understood by the author.
-
- Author
-Login: vshanmug
-Email: vshanmug@student.42kl.edu.my
-
- Notes
-
-This library will serve as a base for future 42 projects such as get_next_line, ft_printf, and others. Maintaining clean and reusable code here is essential for long-term efficiency.
+All implementations were written and tested independently, and AI was not used to directly generate final code submissions.
