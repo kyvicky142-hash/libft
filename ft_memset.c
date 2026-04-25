@@ -26,7 +26,6 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
-
 //using ptr not b because the it cannot be dereferenced 
 //start at b and change everything to c 
 // for an exmaple: b: apple			ft_memset("%s\n", 'i', 3)
